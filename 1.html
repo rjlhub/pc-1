@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>filter</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="./js/base.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="navbox">
+            <div class="logo">
+                <a href="1.html">
+                    Ren龙 | <span class="font16">技术demo</span>
+                </a>
+            </div>
+            <nav>
+                <ul id="navlist">
+                    <li><a href="1.html" title="首页">网站首页</a></li>
+                    <li><a href="3.html" title="nav1">nav-one</a></li>
+                    <li><a href="#" title="nav2">nav-two</a></li>
+                    <li><a href="#" title="nav3">nav-thr</a></li>
+                    <li><a href="#" title="nav4">nav-fou</a></li>
+                    <li><a href="2.html" title="关于">关于</a></li>
+                </ul>
+            </nav>
+            <div class="less1023">
+                <menu class="mnavh">
+                    <span class="navicon"></span>
+                </menu>
+                <div class="nav-title">
+                    RJ龙-Book
+                </div>
+            </div>
+
+            <div class="search fr prompt">
+                🔍
+            </div>
+        </div>
+    </header>
+    <article id="article">
+        <div class="sidebar whitebg">
+            <ul>
+                <li>赤橙红绿青蓝紫</li>
+                <li>橙-导航nav-1</li>
+                <li>红-导航nav-2</li>
+                <li>绿-导航nav-3</li>
+                <li>青-导航nav-4</li>
+                <li>蓝-导航nav-5</li>
+                <li>紫-导航nav-6</li>
+            </ul>
+        </div>
+        <div class="lbox fl">
+            <div class="content-box whitebg search-box hide">
+                <h1 class="cont-title clearfix">Search <span class="fr close-search" style="cursor: pointer;">✖️</span>
+                </h1>
+                <div class="textinput" style="margin-top: 20px;">
+                    <form>
+                        <input type="text" class="intext" placeholder="请输入"
+                            style="padding: 10px;background-color: #ffffff;border: none;border-bottom: 1px solid #eeeeee;width: calc(100% - 20px);box-shadow: none;outline: none;font-size: 18px;color: #000000;">
+                        <button class="btn btn-sure"
+                            style="padding: 4px 10px;border-radius: 4px;outline: none;display: block;margin: 18px auto 0;font-size: 16px;cursor: pointer;">确定</button>
+                    </form>
+                </div>
+            </div>
+            <div class="content-box whitebg">
+                <h2 class="lbtitle">
+                    <span class="con-nav fr">您现在的位置是：
+                        <a href="#">首页</a>
+                        <a href="#">nav-two</a>
+                        <a href="#">程序员</a>
+                    </span>
+                    程序员
+                </h2>
+                <h1 class="cont-title">个人RJ,龙的世界！</h1>
+                <div class="bloginfo mt20">
+                    <i class="avatar fl">
+                        <img src="http://img2.imgtn.bdimg.com/it/u=265535345,1890400617&fm=26&gp=0.jpg" alt="">
+                    </i>
+                    <span>RJ龙</span>
+                    <span>2019-08-16</span>
+                    <span>程序</span>
+                    <span>0人已围观</span>
+                </div>
+                <div class="cont-info">
+                    <b
+                        style="color: #000000;margin-right: 5px;">简介</b>个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。
+                </div>
+            </div>
+            <div class="comments whitebg">
+                <h2 class="lbtitle">相关文章</h2>
+                <ul class="otherlink">
+                    <li>
+                        <a href="#">html 教程1-2</a>
+                    </li>
+                    <li>
+                        <a href="#">css 教程1-2</a>
+                    </li>
+                    <li>
+                        <a href="#">JS 教程1-2</a>
+                    </li>
+                    <li>
+                        <a href="#">Vue 教程1-2</a>
+                    </li>
+                    <li>
+                        <a href="#">React 教程1-2</a>
+                    </li>
+                    <li>
+                        <a href="#">html 教程3-5</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="comments whitebg">
+                <h2 class="lbtitle">文字评论</h2>
+                <div>
+                    <!-- 评论 开始 -->
+                    <div class="pinglun">
+                        <div class="plbox">
+                            <div class="pl-area-post">
+                                <div class="pl-post">
+                                    <div class="pl-textarea">
+                                        <textarea name="textareaname" class="pl-post-word" id="pl-saytext"
+                                            placeholder="说点什么吧！"></textarea>
+                                    </div>
+                                    <div class="pl-tools">
+                                        <div class="iconfont">
+                                            <i class="">😀</i>
+                                        </div>
+                                        <div class="pl-btn-post">
+                                            <button class="btn-post">发布</button>
+                                        </div>
+                                        <div class="pl-username fr">
+                                            <i>👤</i>
+                                            <input type="text" id="pl-username" class="pl-key-user" placeholder="昵称"
+                                                value>
+                                        </div>
+                                        <div class="pl-icons-box">
+                                            <ul>
+                                                <li>😀</li>
+                                                <li>😁</li>
+                                                <li>😂</li>
+                                                <li>😉</li>
+                                                <li>😎</li>
+                                                <li>😍</li>
+                                                <li>🤔</li>
+                                                <li>😏</li>
+                                                <li>😥</li>
+                                                <li>😪</li>
+                                                <li>😓</li>
+                                                <li>😞</li>
+                                                <li>😤</li>
+                                                <li>😭</li>
+                                                <li>😳</li>
+                                                <li>😡</li>
+                                                <li>😠</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pl-header-info">
+                                <em>0</em>人评论，<em>0</em>条评论
+                            </div>
+                            <div class="pl-show-list">
+                                <div class="pl-comment-item clearfix">
+                                    <div class="pl-item-userpic fl">
+                                        <img src="http://img2.imgtn.bdimg.com/it/u=265535345,1890400617&amp;fm=26&amp;gp=0.jpg"
+                                            class="userpic" alt="">
+                                    </div>
+                                    <div class="pl-item-info fl">
+                                        <div class="pl-item-title">
+                                            <span>匿名读友</span>
+                                            <span>昨天 18:00</span>
+                                        </div>
+                                        <div class="pl-item-saytext">
+                                            <pre>&lt;script&gt;“”"' '' ""&lt;/script&gt;</pre>
+                                        </div>
+                                        <div style="text-align: right;margin-bottom: 10px;">
+                                            <span style="cursor: pointer;padding: 4px;">回复</span>
+                                        </div>
+                                        <div class="pl-area-post pl-item-area-post" style="display: none;">
+                                            <div class="pl-post">
+                                                <div class="pl-textarea">
+                                                    <textarea name="textareaname" class="pl-post-word" id="pl-saytext"
+                                                        placeholder="说点什么吧！"></textarea>
+                                                </div>
+                                                <div class="pl-tools">
+                                                    <div class="iconfont pl-item-icon">
+                                                        <i class="">😀</i>
+                                                    </div>
+                                                    <div class="pl-btn-post">
+                                                        <button class="btn-post">发布</button>
+                                                    </div>
+                                                    <div class="pl-username fr">
+                                                        <i>👤</i>
+                                                        <input type="text" id="pl-username" class="pl-key-user"
+                                                            placeholder="昵称" value>
+                                                    </div>
+                                                    <div class="pl-icons-box">
+                                                        <ul>
+                                                            <li>😀</li>
+                                                            <li>😁</li>
+                                                            <li>😂</li>
+                                                            <li>😉</li>
+                                                            <li>😎</li>
+                                                            <li>😍</li>
+                                                            <li>🤔</li>
+                                                            <li>😏</li>
+                                                            <li>😥</li>
+                                                            <li>😪</li>
+                                                            <li>😓</li>
+                                                            <li>😞</li>
+                                                            <li>😤</li>
+                                                            <li>😭</li>
+                                                            <li>😳</li>
+                                                            <li>😡</li>
+                                                            <li>😠</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="pl-comment-item clearfix">
+                                    <div class="pl-item-userpic fl">
+                                        <img src="http://img2.imgtn.bdimg.com/it/u=265535345,1890400617&amp;fm=26&amp;gp=0.jpg"
+                                            class="userpic" alt="">
+                                    </div>
+                                    <div class="pl-item-info fl">
+                                        <div class="pl-item-title">
+                                            <span>匿名读友</span>
+                                            <span>昨天 18:00</span>
+                                        </div>
+                                        <div class="pl-item-saytext">
+                                            <pre>&lt;script&gt;“”"' '' ""&lt;/script&gt;</pre>
+                                        </div>
+                                        <div style="text-align: right;margin-bottom: 10px;">
+                                            <span style="cursor: pointer;padding: 4px;">回复</span>
+                                        </div>
+                                        <div class="pl-area-post pl-item-area-post" style="display: none;">
+                                            <div class="pl-post">
+                                                <div class="pl-textarea">
+                                                    <textarea name="textareaname" class="pl-post-word" id="pl-saytext"
+                                                        placeholder="说点什么吧！"></textarea>
+                                                </div>
+                                                <div class="pl-tools">
+                                                    <div class="iconfont pl-item-icon">
+                                                        <i class="">😀</i>
+                                                    </div>
+                                                    <div class="pl-btn-post">
+                                                        <button class="btn-post">发布</button>
+                                                    </div>
+                                                    <div class="pl-username fr">
+                                                        <i>👤</i>
+                                                        <input type="text" id="pl-username" class="pl-key-user"
+                                                            placeholder="昵称" value>
+                                                    </div>
+                                                    <div class="pl-icons-box">
+                                                        <ul>
+                                                            <li>😀</li>
+                                                            <li>😁</li>
+                                                            <li>😂</li>
+                                                            <li>😉</li>
+                                                            <li>😎</li>
+                                                            <li>😍</li>
+                                                            <li>🤔</li>
+                                                            <li>😏</li>
+                                                            <li>😥</li>
+                                                            <li>😪</li>
+                                                            <li>😓</li>
+                                                            <li>😞</li>
+                                                            <li>😤</li>
+                                                            <li>😭</li>
+                                                            <li>😳</li>
+                                                            <li>😡</li>
+                                                            <li>😠</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rbox whitebg">
+            <iframe src="https://youzan.github.io/vant/mobile.html#/zh-CN/theme" frameborder="0" style="width: 100%;height: 100%;"></iframe>
+        </div>
+    </article>
+    
+    <!-- <div id="app">
+        <div @click="addMore">加载更多</div>
+        <ul>
+            <li v-for="item in filterlist">{{item}}</li>
+        </ul>
+        <hr>
+        <ul>
+            <li v-for="item in filterlistFun">{{item}}</li>
+        </ul>
+    </div> -->
+</body>
+<script>
+    var obj = {
+        birth: 1990,
+        getAge: function (year) {
+            var b = this.birth; // this -> obj
+            var fn = (y) => y - this.birth;
+            console.log(fn.call({
+                birth: 2019
+            }, year));
+        }
+    }
+    // obj.getAge(2020)
+
+    // Vue.filter('filterAdd1', function (value, one, two) {
+    //     return value + one + two; //默认第一个参数就是默认要过滤的那个值
+    // })
+    // Vue.filter('filterAdd2', function (value) {
+    //     return '$' + value;
+    // })
+    var vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                input: 5,
+                size: 5,
+                list: [{
+                        "id": 0,
+                        "title": "11111",
+                        "cont": "111111"
+                    },
+                    {
+                        "id": 1,
+                        "title": "22222",
+                        "cont": "111111"
+                    },
+                    {
+                        "id": 2,
+                        "title": "33333",
+                        "cont": "111111"
+                    },
+                    {
+                        "id": 3,
+                        "title": "44444",
+                        "cont": "111111"
+                    },
+                    {
+                        "id": 4,
+                        "title": "55555",
+                        "cont": "55555"
+                    },
+                    {
+                        "id": 5,
+                        "title": "66666",
+                        "cont": "66666"
+                    },
+                    {
+                        "id": 6,
+                        "title": "77777",
+                        "cont": "77777"
+                    },
+                    {
+                        "id": 7,
+                        "title": "77777",
+                        "cont": "88888"
+                    },
+                    {
+                        "id": 8,
+                        "title": "888888",
+                        "cont": "999999"
+                    },
+                    {
+                        "id": 9,
+                        "title": "000000",
+                        "cont": "99999"
+                    },
+                    {
+                        "id": 10,
+                        "title": "a88888",
+                        "cont": "99999"
+                    },
+                    {
+                        "id": 11,
+                        "title": "a22222",
+                        "cont": "111111"
+                    },
+                    {
+                        "id": 12,
+                        "title": "a33333",
+                        "cont": "111111"
+                    },
+                    {
+                        "id": 13,
+                        "title": "a44444",
+                        "cont": "111111"
+                    },
+                    {
+                        "id": 14,
+                        "title": "a55555",
+                        "cont": "55555"
+                    },
+                    {
+                        "id": 15,
+                        "title": "a66666",
+                        "cont": "66666"
+                    },
+                    {
+                        "id": 16,
+                        "title": "a77777",
+                        "cont": "77777"
+                    },
+                    {
+                        "id": 17,
+                        "title": "a77777",
+                        "cont": "88888"
+                    },
+                    {
+                        "id": 18,
+                        "title": "a888888",
+                        "cont": "999999"
+                    },
+                    {
+                        "id": 19,
+                        "title": "a000000",
+                        "cont": "99999"
+                    },
+                ]
+            }
+        },
+        computed: {
+            filterlist() {
+                let num = this.size;
+                return this.list.filter(function (number) {
+                    return number.id < num;
+                })
+            }
+
+        },
+        methods: {
+            filterlistFun() {
+                let num = this.size;
+                return this.list.filter(function (number) {
+                    return number.id < num;
+                })
+            },
+            addMore() {
+                this.size += 5;
+            }
+        },
+        mounted() {
+            // console.log(['1','2','3'].map(parseInt));
+            // console.log(['10','10','8','10','10'].map(parseInt))
+            // console.log(['5','6','7','8','10'].map(parseInt))
+            // const items = new Set([1,2,3,4,1])
+            // console.log(items)
+            // const array = Array.from(items)
+            // console.log(array)
+            const m = new Map();
+            const o = {
+                p: 'asd'
+            };
+            m.set(o, 'content')
+            console.log(m.get(o))
+        }
+    })
+
+
+
+    // var telephone = document.querySelector("input[type='text']");
+    // console.log(telephone.value);
+    // var telReg = /^1[0-9]\d{9}$/;
+
+    // var $submit = document.querySelector(".submit");
+    // $submit.onclick = function() {
+    //     console.log(telReg.test(telephone.value));
+    // }
+    
+
+    var sure = document.querySelector(".btn-sure");
+    var searchbox = document.querySelector(".search-box");
+    
+
+    sure.onclick = function () {
+        var text = document.querySelector(".intext").value;
+        console.log(text)
+    }
+
+    
+</script>
+
+<!-- <script src="./js/base.js"></script> -->
+
+</html>

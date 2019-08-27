@@ -1,0 +1,133 @@
+.advert {
+    margin: auto;
+}
+
+.advertitem {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 20px;
+    text-align: center;
+    /* margin-left: 6.02px;
+    margin-right: 6.02px; */
+}
+
+.advert-link {
+    display: inline-block;
+    width: 90%;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.advert-link img {
+    display: inline-block;
+    transition: transform 0.6s;
+}
+
+.advert-link:hover img {
+    transform: scale(1.4);
+}
+
+.infobg {
+    background: url(https://www.yangqq.com/skin/jxhx/images/abbg.png) no-repeat right top white;
+    padding: 20px 40px;
+}
+
+.infobox {
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.info-user {
+    width: 100px;
+    height: 100%;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(to top right, rgba(0, 153, 255, .9), rgba(42, 228, 197, .7));
+    position: relative;
+    margin-right: 15px;
+}
+
+.info-user img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.info-user::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(https://www.yangqq.com/skin/jxhx/images/v.png) no-repeat;
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.infobox h4 {
+    margin: 10px 0 10px;
+    font-size: 18px;
+}
+
+.infobox p {
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.info-content {
+    text-indent: 2em;
+}
+
+.gd_title {
+    display: inline-block;
+    font-size: 18px;
+    color: #666666;
+    padding: 4px 14px;
+    margin: 20px 0 20px;
+    border-bottom: 1px dashed #888888;
+}
+
+.info-content p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+#homefooter {
+
+    background: url(https://www.imooc.com/static/img/index/eliteTbg.jpg) no-repeat center center #666666;
+    background-size: cover;
+    /* height: 148px; */
+
+}
+
+.foot-content {
+    max-width: 1200px;
+    /* height: 100%; */
+    margin: auto;
+    padding: 36px 0;
+}
+
+.footer-link a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footer-link a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}
+
+.foot-content .footer-copyright {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #a0a0a0;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+/*  */

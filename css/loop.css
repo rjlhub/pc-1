@@ -1,0 +1,54 @@
+#loopdiv { /* banner */
+    width: 100%;
+    height: 340px;
+    /* margin: 0 auto; */
+    overflow: hidden;
+    position: relative;
+}
+
+/* #looplist {
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    left: 250px;
+} */
+#looplist {
+    width: 1000%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+}
+#looplist li {
+    width: 10%;
+    float: left;
+}
+#looplist li a {
+    display: block;
+    width: 100%;
+}
+#looplist li a img {
+    display: block;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.pagination li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.pagination li:first-child {
+    margin-left: 0;
+}
+.pagination li.now {
+    background-color: #ffffff;
+}

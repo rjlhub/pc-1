@@ -1,0 +1,92 @@
+@media screen and (max-width: 1023px) {
+    .navbox {
+        width: 100%;
+    }
+
+    nav {
+        float: none;
+        display: none;
+        margin: 0;
+    }
+
+    .logo {
+        float: none;
+        display: none;
+        margin: 0;
+    }
+    .less1023 {
+        display: block;
+    }
+    .nav-title {
+        display: block;
+    }
+    .mnavh {
+        position: absolute;
+        display: block;
+        overflow: hidden;
+    }
+    .box, article{
+        width: 96%;
+    }
+    .lbox {
+        width: 100%;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .rbox  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .sidebar {
+        display: block
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .navbox{
+        width: 96%;
+    }
+    .box, article{
+        width: 96%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .pl-username {
+        width: 100px;
+        padding: 5px 8px;
+        margin-top: 6px;
+    }
+    .pl-username input {
+        width: 70%;
+    }
+    .pl-btn-post {
+        margin-top: 5px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .con-nav {
+        display: none;
+    }
+    .otherlink li {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 1920px) {
+    .banner-img-box {
+        background-size: cover;
+    }
+}
+@media (max-width: 750px) {
+    .web-banner-img {
+        display: block;
+    }
+}
